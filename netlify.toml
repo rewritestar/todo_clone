@@ -1,0 +1,3 @@
+[bulid]
+publish = "build"
+command = "yarn build"
