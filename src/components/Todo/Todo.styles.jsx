@@ -30,6 +30,7 @@ const ButtonContainer = styled.span`
     background-color: ${({ theme }) => theme.COLOR_ACCENT};
     transform: rotate(15deg) scale(1.2);
   }
+  display: flex;
 `;
 
 const Button = styled.button`
@@ -37,6 +38,9 @@ const Button = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export { Container, Checkbox, Text, ButtonContainer, Button };
