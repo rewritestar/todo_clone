@@ -5,7 +5,6 @@ import * as S from "./TodoList.styles";
 
 const TodoList = ({ filter }) => {
   const [todos, setTodos] = useState(() => readTodos());
-
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);

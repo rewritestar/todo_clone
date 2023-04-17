@@ -4,7 +4,6 @@ const Container = styled.li`
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  align-items: center;
   padding: 0.5rem;
 `;
 
@@ -18,6 +17,13 @@ const Text = styled.label`
   flex: 1 0 auto;
   margin-left: 0.5rem;
   color: ${({ theme }) => theme.COLOR_TEXT};
+  width: 6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: ${(props) => props.line};
+  -webkit-box-orient: vertical;
 `;
 
 const ButtonContainer = styled.span`

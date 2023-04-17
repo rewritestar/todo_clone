@@ -17,7 +17,12 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
         checked={todo.status === "completed"}
         onChange={handleChange}
       ></S.Checkbox>
-      <S.Text htmlFor={"checkbox" + todo.id}>{todo.text}</S.Text>
+      <S.Text
+        htmlFor={"checkbox" + todo.id}
+        line={Math.ceil(todo.text.length / 25)}
+      >
+        {todo.text}
+      </S.Text>
       <S.ButtonContainer>
         <S.Button onClick={handleDelete}>
           <BsTrashFill />
